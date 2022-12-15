@@ -68,6 +68,7 @@ randomizer/Lists/Item.py
 randomizer/Lists/KasplatLocations.py
 randomizer/Lists/LevelInfo.py
 randomizer/Lists/Location.py
+randomizer/Lists/Logic.py
 randomizer/Lists/MapsAndExits.py
 randomizer/Lists/Minigame.py
 randomizer/Lists/Patches.py
