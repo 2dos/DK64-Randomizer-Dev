@@ -104,7 +104,6 @@ randomizer/Patching/BarrelRando.py
 randomizer/Patching/BossRando.py
 randomizer/Patching/CosmeticColors.py
 randomizer/Patching/CrownPlacer.py
-randomizer/Patching/DKTV.py
 randomizer/Patching/DoorPlacer.py
 randomizer/Patching/EnemyRando.py
 randomizer/Patching/EntranceRando.py
