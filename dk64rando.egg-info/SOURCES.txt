@@ -20,6 +20,7 @@ randomizer/ShuffleCBs.py
 randomizer/ShuffleCrowns.py
 randomizer/ShuffleDoors.py
 randomizer/ShuffleExits.py
+randomizer/ShuffleFairies.py
 randomizer/ShuffleItems.py
 randomizer/ShuffleKasplats.py
 randomizer/ShufflePatches.py
@@ -65,6 +66,7 @@ randomizer/Lists/CrownLocations.py
 randomizer/Lists/DoorLocations.py
 randomizer/Lists/EnemyTypes.py
 randomizer/Lists/Exceptions.py
+randomizer/Lists/FairyLocations.py
 randomizer/Lists/Item.py
 randomizer/Lists/KasplatLocations.py
 randomizer/Lists/LevelInfo.py
@@ -108,6 +110,7 @@ randomizer/Patching/CrownPlacer.py
 randomizer/Patching/DoorPlacer.py
 randomizer/Patching/EnemyRando.py
 randomizer/Patching/EntranceRando.py
+randomizer/Patching/FairyPlacer.py
 randomizer/Patching/Hash.py
 randomizer/Patching/ItemRando.py
 randomizer/Patching/KasplatLocationRando.py
