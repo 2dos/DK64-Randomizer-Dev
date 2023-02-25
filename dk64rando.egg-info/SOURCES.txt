@@ -17,6 +17,7 @@ randomizer/Settings.py
 randomizer/ShuffleBarrels.py
 randomizer/ShuffleBosses.py
 randomizer/ShuffleCBs.py
+randomizer/ShuffleCoins.py
 randomizer/ShuffleCrowns.py
 randomizer/ShuffleDoors.py
 randomizer/ShuffleExits.py
@@ -63,6 +64,7 @@ randomizer/Enums/VendorType.py
 randomizer/Enums/Warps.py
 randomizer/Enums/WrinklyKong.py
 randomizer/Enums/__init__.py
+randomizer/Lists/BananaCoinLocations.py
 randomizer/Lists/CrownLocations.py
 randomizer/Lists/DoorLocations.py
 randomizer/Lists/EnemyTypes.py
@@ -106,6 +108,7 @@ randomizer/Patching/BananaPlacer.py
 randomizer/Patching/BananaPortRando.py
 randomizer/Patching/BarrelRando.py
 randomizer/Patching/BossRando.py
+randomizer/Patching/CoinPlacer.py
 randomizer/Patching/CosmeticColors.py
 randomizer/Patching/CrownPlacer.py
 randomizer/Patching/DoorPlacer.py
