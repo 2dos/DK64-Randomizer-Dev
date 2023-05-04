@@ -56,6 +56,7 @@ randomizer/Enums/Regions.py
 randomizer/Enums/ScriptTypes.py
 randomizer/Enums/SearchMode.py
 randomizer/Enums/Settings.py
+randomizer/Enums/SongGroups.py
 randomizer/Enums/SongType.py
 randomizer/Enums/Time.py
 randomizer/Enums/Transitions.py
