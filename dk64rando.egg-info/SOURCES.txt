@@ -5,6 +5,7 @@ dk64rando.egg-info/PKG-INFO
 dk64rando.egg-info/SOURCES.txt
 dk64rando.egg-info/dependency_links.txt
 dk64rando.egg-info/top_level.txt
+randomizer/BackgroundRandomizer.py
 randomizer/CompileHints.py
 randomizer/Fill.py
 randomizer/ItemPool.py
@@ -103,7 +104,6 @@ randomizer/LogicFiles/HideoutHelm.py
 randomizer/LogicFiles/JungleJapes.py
 randomizer/LogicFiles/Shops.py
 randomizer/LogicFiles/__init__.py
-randomizer/Patching/ApplyLocal.py
 randomizer/Patching/ApplyRandomizer.py
 randomizer/Patching/BananaPlacer.py
 randomizer/Patching/BananaPortRando.py
