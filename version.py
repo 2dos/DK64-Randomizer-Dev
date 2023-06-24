@@ -1,11 +1,11 @@
 """Holds the version for DK64 Rando."""
 import js
 
-stable_version = "1.5"
+stable_version = "2.0"
 dev_version = "2.0"
 
 try:
-    url = js.location.href.lower().replace("/", "").replace("http:", "").replace("https:", "")
+    url = js.location.hostname.lower().replace("/", "").replace("http:", "").replace("https:", "")
 except Exception:
     url = "localhost"
 
@@ -28,4 +28,4 @@ except Exception:
     pass
 whl_hash = "no_file_using_filler_hash"
 
-whl_hash = "16f7cd109c58aa1f4722a78c5619d250"
+whl_hash = "ad637cca495c89c2391d5f166bef775e"
