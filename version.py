@@ -2,7 +2,7 @@
 import js
 
 stable_version = "2.0"
-dev_version = "2.0"
+dev_version = "2.1"
 
 try:
     url = js.location.hostname.lower().replace("/", "").replace("http:", "").replace("https:", "")
@@ -28,4 +28,4 @@ except Exception:
     pass
 whl_hash = "no_file_using_filler_hash"
 
-whl_hash = "4b5195d3592883f415fc4b24cc0a4f3c"
+whl_hash = "1a5e983a26dedeca243a652985d8c5ae"
