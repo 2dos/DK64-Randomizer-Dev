@@ -68,7 +68,7 @@ randomizer/Enums/Warps.py
 randomizer/Enums/WrinklyKong.py
 randomizer/Enums/__init__.py
 randomizer/Lists/BananaCoinLocations.py
-randomizer/Lists/CrownLocations.py
+randomizer/Lists/CustomLocations.py
 randomizer/Lists/DoorLocations.py
 randomizer/Lists/EnemyTypes.py
 randomizer/Lists/Exceptions.py
@@ -81,7 +81,6 @@ randomizer/Lists/Location.py
 randomizer/Lists/Logic.py
 randomizer/Lists/MapsAndExits.py
 randomizer/Lists/Minigame.py
-randomizer/Lists/Patches.py
 randomizer/Lists/Plandomizer.py
 randomizer/Lists/QoL.py
 randomizer/Lists/ShufflableExit.py
