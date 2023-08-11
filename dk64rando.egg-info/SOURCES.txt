@@ -18,6 +18,7 @@ randomizer/ShuffleBarrels.py
 randomizer/ShuffleBosses.py
 randomizer/ShuffleCBs.py
 randomizer/ShuffleCoins.py
+randomizer/ShuffleCrates.py
 randomizer/ShuffleCrowns.py
 randomizer/ShuffleDoors.py
 randomizer/ShuffleExits.py
@@ -115,6 +116,7 @@ randomizer/Patching/BarrelRando.py
 randomizer/Patching/BossRando.py
 randomizer/Patching/CoinPlacer.py
 randomizer/Patching/CosmeticColors.py
+randomizer/Patching/CratePlacer.py
 randomizer/Patching/CrownPlacer.py
 randomizer/Patching/DoorPlacer.py
 randomizer/Patching/EnemyRando.py
