@@ -42,7 +42,7 @@ randomizer/CollectibleLogicFiles/JungleJapes.py
 randomizer/CollectibleLogicFiles/TestBananaTotals.py
 randomizer/CollectibleLogicFiles/__init__.py
 randomizer/Enums/Collectibles.py
-randomizer/Enums/EnemyLocations.py
+randomizer/Enums/Enemies.py
 randomizer/Enums/EnemySubtypes.py
 randomizer/Enums/Events.py
 randomizer/Enums/ExitCategories.py
@@ -51,6 +51,7 @@ randomizer/Enums/Items.py
 randomizer/Enums/Kongs.py
 randomizer/Enums/Levels.py
 randomizer/Enums/Locations.py
+randomizer/Enums/Maps.py
 randomizer/Enums/MinigameType.py
 randomizer/Enums/Minigames.py
 randomizer/Enums/MoveTypes.py
