@@ -39,11 +39,11 @@ randomizer/CollectibleLogicFiles/FranticFactory.py
 randomizer/CollectibleLogicFiles/FungiForest.py
 randomizer/CollectibleLogicFiles/GloomyGalleon.py
 randomizer/CollectibleLogicFiles/JungleJapes.py
-randomizer/CollectibleLogicFiles/TestBananaTotals.py
 randomizer/CollectibleLogicFiles/__init__.py
 randomizer/Enums/Collectibles.py
 randomizer/Enums/Enemies.py
 randomizer/Enums/EnemySubtypes.py
+randomizer/Enums/EnumEncoder.py
 randomizer/Enums/Events.py
 randomizer/Enums/ExitCategories.py
 randomizer/Enums/HintType.py
@@ -138,7 +138,6 @@ randomizer/Patching/PuzzleRando.py
 randomizer/Patching/ShopRandomizer.py
 randomizer/Patching/UpdateHints.py
 randomizer/Patching/__init__.py
-randomizer/Patching/er-backup.py
 randomizer/Patching/generate_kong_color_images.py
 ui/GenSpoiler.py
 ui/GenTracker.py
