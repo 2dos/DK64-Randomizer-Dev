@@ -62,6 +62,8 @@ randomizer/Enums/SearchMode.py
 randomizer/Enums/Settings.py
 randomizer/Enums/SongGroups.py
 randomizer/Enums/SongType.py
+randomizer/Enums/SwitchTypes.py
+randomizer/Enums/Switches.py
 randomizer/Enums/Time.py
 randomizer/Enums/Transitions.py
 randomizer/Enums/Types.py
