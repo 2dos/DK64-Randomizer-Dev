@@ -150,4 +150,5 @@ ui/generate_buttons.py
 ui/plando_validation.py
 ui/progress_bar.py
 ui/rando_options.py
+ui/randomize_settings.py
 ui/serialize_settings.py
