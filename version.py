@@ -1,4 +1,4 @@
 """Holds the version for DK64 Rando."""
-version = "2.1.2"
+version = "2.1.3"
 
-whl_hash = "b559da6af324041e2a48b328cf0c7854"
+whl_hash = "f409f741a4c31df2391561d5bdeb258b"
