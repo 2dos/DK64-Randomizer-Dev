@@ -151,6 +151,7 @@ ui/bindings.py
 ui/download.py
 ui/generate_buttons.py
 ui/music_select.py
+ui/plando_settings.py
 ui/plando_validation.py
 ui/progress_bar.py
 ui/rando_options.py
