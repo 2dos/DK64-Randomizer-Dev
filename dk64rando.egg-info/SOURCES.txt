@@ -113,6 +113,8 @@ randomizer/LogicFiles/HideoutHelm.py
 randomizer/LogicFiles/JungleJapes.py
 randomizer/LogicFiles/Shops.py
 randomizer/LogicFiles/__init__.py
+randomizer/Patching/ASMPatcher.py
+randomizer/Patching/ASMPatcherWS.py
 randomizer/Patching/ApplyLocal.py
 randomizer/Patching/ApplyRandomizer.py
 randomizer/Patching/BananaPlacer.py
