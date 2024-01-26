@@ -5,4 +5,4 @@ major = split_data[0]
 minor = split_data[1]
 patch = split_data[2]
 
-whl_hash = "64de8a58a92c439095783194e7fc051b"
+whl_hash = "c0372438d0237bcf90e6b2607f67b595"
