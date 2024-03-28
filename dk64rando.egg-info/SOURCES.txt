@@ -144,7 +144,6 @@ randomizer/Patching/PuzzleRando.py
 randomizer/Patching/ShopRandomizer.py
 randomizer/Patching/UpdateHints.py
 randomizer/Patching/__init__.py
-randomizer/Patching/er-backup.py
 randomizer/Patching/generate_kong_color_images.py
 ui/GenSpoiler.py
 ui/GenTracker.py
