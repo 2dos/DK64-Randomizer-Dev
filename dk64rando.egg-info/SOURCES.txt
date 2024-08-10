@@ -47,6 +47,7 @@ randomizer/Enums/Enemies.py
 randomizer/Enums/EnemySubtypes.py
 randomizer/Enums/Events.py
 randomizer/Enums/ExitCategories.py
+randomizer/Enums/HintRegion.py
 randomizer/Enums/HintType.py
 randomizer/Enums/Items.py
 randomizer/Enums/Kongs.py
