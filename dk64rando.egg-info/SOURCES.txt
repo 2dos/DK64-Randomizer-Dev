@@ -26,6 +26,7 @@ randomizer/ShuffleFairies.py
 randomizer/ShuffleItems.py
 randomizer/ShuffleKasplats.py
 randomizer/ShufflePatches.py
+randomizer/ShufflePorts.py
 randomizer/ShuffleShopLocations.py
 randomizer/ShuffleWarps.py
 randomizer/Spoiler.py
