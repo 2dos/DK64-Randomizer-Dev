@@ -17,15 +17,15 @@
         <script type="text/javascript" src="../static/js/showdown.min.js"></script>
         <title></title>
         <link href="../static/img/dk.png" rel="icon" />
-        <link href="./web_cache/cssfamily=Catamaran:100,200,300,400,500,600,700,800,900"
+        <link href="../web_cache/cssfamily=Catamaran:100,200,300,400,500,600,700,800,900"
               rel="stylesheet"/>
-        <link href="./web_cache/cssfamily=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+        <link href="../web_cache/cssfamily=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
               rel="stylesheet"/>
         <link href="../static/styles/styles.css" rel="stylesheet" />
         <link href="../static/styles/gui.css" rel="stylesheet" type="text/css" />
         <link href="../static/styles/wiki.css" rel="stylesheet" type="text/css" />
-        <script src="../static/js/jq_v3_6_0.min.js"></script>
-        <script src="../static/js/jqui_v1_13_2.min.js"></script>
+        <script src="../web_cache/jquery-3.6.0.js"></script>
+        <script src="../web_cache/ui/1.13.2/jquery-ui.js"></script>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -181,7 +181,7 @@
                 }
                 startingSegs.forEach(seg => {
                     if (startsWith(title_value, seg.search)) {
-                        target_md_url = `./article_markdown/custom_locations/${title_value}.md`;
+                        target_md_url = `./article_markdown/custom_locations/${title_value}.MD`;
                         title_pretty = camelCaseToSpaces(title_value);
                         title_pretty = title_pretty.replace(seg.preface, `${seg.preface}:`)
                     }
@@ -196,7 +196,7 @@
             
             function updateTitle(name) {
                 document.getElementById("page-title").innerText = name;
-                document.getElementById("site_page_identifier").setAttribute("content", name);
+                //document.getElementById("site_page_identifier").setAttribute("content", name);
                 document.title = name;
             }
 
@@ -302,6 +302,6 @@
             }, false);
         </script>
         <script type="text/javascript" src="../static/js/font-awesome.js"></script>
-        <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
