@@ -1,9 +1,9 @@
 """Holds the version for DK64 Rando."""
 
-version = "4.5.6"
+version = "4.5.7"
 split_data = version.split(".")
 major = split_data[0]
 minor = split_data[1]
 patch = split_data[2]
 
-whl_hash = "f8af933045800ba71ab9c285b5c39840"
+whl_hash = "4da5a236342205e8933e6f4e01bbf62a"
