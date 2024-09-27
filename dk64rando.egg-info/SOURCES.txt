@@ -139,6 +139,7 @@ randomizer/Patching/KasplatLocationRando.py
 randomizer/Patching/KongRando.py
 randomizer/Patching/Lib.py
 randomizer/Patching/LibImage.py
+randomizer/Patching/LibPointer.py
 randomizer/Patching/MIPS.py
 randomizer/Patching/MiscSetupChanges.py
 randomizer/Patching/MoveLocationRando.py
