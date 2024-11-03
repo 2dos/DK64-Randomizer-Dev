@@ -8,6 +8,7 @@ dk64rando.egg-info/top_level.txt
 randomizer/CompileHints.py
 randomizer/Fill.py
 randomizer/ItemPool.py
+randomizer/JsonReader.py
 randomizer/Logic.py
 randomizer/LogicClasses.py
 randomizer/PlandoUtils.py
@@ -30,7 +31,6 @@ randomizer/ShufflePorts.py
 randomizer/ShuffleShopLocations.py
 randomizer/ShuffleWarps.py
 randomizer/Spoiler.py
-randomizer/Worker.py
 randomizer/__init__.py
 randomizer/CollectibleLogicFiles/AngryAztec.py
 randomizer/CollectibleLogicFiles/CreepyCastle.py
@@ -152,16 +152,10 @@ randomizer/Patching/ShopRandomizer.py
 randomizer/Patching/UpdateHints.py
 randomizer/Patching/__init__.py
 randomizer/Patching/generate_kong_color_images.py
-ui/GenSpoiler.py
-ui/GenTracker.py
 ui/__init__.py
 ui/bindings.py
-ui/download.py
-ui/generate_buttons.py
-ui/music_select.py
 ui/plando_settings.py
 ui/plando_validation.py
 ui/progress_bar.py
 ui/rando_options.py
 ui/randomize_settings.py
-ui/serialize_settings.py
