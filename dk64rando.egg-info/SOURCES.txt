@@ -162,6 +162,7 @@ randomizer/Patching/Lib.py
 randomizer/Patching/LibImage.py
 randomizer/Patching/LibPointer.py
 randomizer/Patching/MIPS.py
+randomizer/Patching/MirrorMode.py
 randomizer/Patching/MiscSetupChanges.py
 randomizer/Patching/MoveLocationRando.py
 randomizer/Patching/MusicRando.py
