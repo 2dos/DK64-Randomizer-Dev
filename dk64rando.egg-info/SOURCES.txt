@@ -178,5 +178,3 @@ ui/bindings.py
 ui/plando_settings.py
 ui/plando_validation.py
 ui/progress_bar.py
-ui/rando_options.py
-ui/randomize_settings.py
