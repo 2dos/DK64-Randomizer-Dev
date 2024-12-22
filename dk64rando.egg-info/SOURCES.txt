@@ -1,6 +1,10 @@
 LICENSE
 README.md
 setup.py
+controller/__init__.py
+controller/app.py
+controller/cleanup.py
+controller/oauth.py
 dk64rando.egg-info/PKG-INFO
 dk64rando.egg-info/SOURCES.txt
 dk64rando.egg-info/dependency_links.txt
@@ -179,3 +183,6 @@ ui/bindings.py
 ui/plando_settings.py
 ui/plando_validation.py
 ui/progress_bar.py
+worker/__init__.py
+worker/tasks.py
+worker/worker.py
