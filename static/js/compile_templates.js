@@ -2036,7 +2036,7 @@ output += "\n                                    <option value=\"chunky\">\n    
 }
 }
 frame = frame.pop();
-output += "\n            </div>\n            <div style=\"font-style: italic;\">\n                More plando settings in the works!\n            </div>\n            <hr>\n            <h2 class=\"title\">Custom Locations</h2>\n            <div class=\"flex-container\">\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each banana fairy.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_fairies\"\n                               id=\"plando_place_fairies\"\n                               display_name=\"Banana Fairies\"\n                               value=\"True\"/>\n                        Banana Fairies\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each battle arena.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_arenas\"\n                               id=\"plando_place_arenas\"\n                               display_name=\"Battle Arenas\"\n                               value=\"True\"/>\n                        Battle Arenas\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each dirt patch.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_patches\"\n                               id=\"plando_place_patches\"\n                               display_name=\"Dirt Patches\"\n                               value=\"True\"/>\n                        Dirt Patches\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Kasplat.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_kasplats\"\n                               id=\"plando_place_kasplats\"\n                               display_name=\"Kasplats\"\n                               value=\"True\"/>\n                        Kasplats\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each melon crate.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_crates\"\n                               id=\"plando_place_crates\"\n                               display_name=\"Melon Crates\"\n                               value=\"True\"/>\n                        Melon Crates\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Wrinkly door.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_wrinkly\"\n                               id=\"plando_place_wrinkly\"\n                               display_name=\"Wrinkly Doors\"\n                               value=\"True\"/>\n                        Wrinkly Doors\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Troff 'n' Scoff portal.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_tns\"\n                               id=\"plando_place_tns\"\n                               display_name=\"Troff 'n' Scoff Portals\"\n                               value=\"True\"/>\n                        Troff 'n' Scoff Portals\n                    </label>\n                </div>\n                <div class=\"spacer\"></div>\n            </div>\n        </div>\n        <div class=\"col panel\"\n             style=\"border-left: 1px solid #e3e3e3;\">\n            <h2 class=\"title\">Ordering</h2>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Level Order</p>\n                <div style=\"font-style: italic;\">\n                    This planned level order is ignored in non-complex level order shuffle if Kongs are not in the item pool!\n                </div>\n                ";
+output += "\n            </div>\n            <div style=\"font-style: italic;\">\n                More plando settings in the works!\n            </div>\n            <hr>\n            <h2 class=\"title\">Custom Locations</h2>\n            <div class=\"flex-container\">\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each banana fairy.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_fairies\"\n                               id=\"plando_place_fairies\"\n                               display_name=\"Banana Fairies\"\n                               value=\"True\"/>\n                        Banana Fairies\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each battle arena.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_arenas\"\n                               id=\"plando_place_arenas\"\n                               display_name=\"Battle Arenas\"\n                               value=\"True\"/>\n                        Battle Arenas\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each dirt patch.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_patches\"\n                               id=\"plando_place_patches\"\n                               display_name=\"Dirt Patches\"\n                               value=\"True\"/>\n                        Dirt Patches\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Kasplat.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_kasplats\"\n                               id=\"plando_place_kasplats\"\n                               display_name=\"Kasplats\"\n                               value=\"True\"/>\n                        Kasplats\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each melon crate.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_crates\"\n                               id=\"plando_place_crates\"\n                               display_name=\"Melon Crates\"\n                               value=\"True\"/>\n                        Melon Crates\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Wrinkly door.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_wrinkly\"\n                               id=\"plando_place_wrinkly\"\n                               display_name=\"Wrinkly Doors\"\n                               value=\"True\"/>\n                        Wrinkly Doors\n                    </label>\n                </div>\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                           title=\"Allows the user to specify locations for each Troff 'n' Scoff portal.\"\n                           style=\"text-align: left\">\n                        <input class=\"form-check-input\"\n                               type=\"checkbox\"\n                               name=\"plando_place_tns\"\n                               id=\"plando_place_tns\"\n                               display_name=\"Troff 'n' Scoff Portals\"\n                               value=\"True\"/>\n                        Troff 'n' Scoff Portals\n                    </label>\n                </div>\n                <div class=\"spacer\"></div>\n            </div>\n        </div>\n        <div class=\"col panel\"\n             style=\"border-left: 1px solid #e3e3e3;\">\n            <h2 class=\"title\">Ordering</h2>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Level Order</p>\n                <p style=\"font-style: italic;\">\n                    This planned level order is ignored in non-complex level order shuffle if Kongs are not in the item pool!\n                </p>\n                ";
 frame = frame.push();
 var t_11 = (lineno = 254, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,8]));
 if(t_11) {t_11 = runtime.fromIterator(t_11);
@@ -2129,9 +2129,9 @@ output += "\n                            </select>\n                        </di
 }
 }
 frame = frame.pop();
-output += "\n            </div>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Helm Order</p>\n                ";
+output += "\n            </div>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Boss Order</p>\n                <p style=\"font-style: italic;\">\n                    If you plando any T&S bosses, the SLO requirement to be able to beat bosses by or before each level may be violated. Keep this in mind when placing other items. You must choose a boss in order to choose a Kong.\n                </p>\n                ";
 frame = frame.push();
-var t_23 = (lineno = 329, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,5]));
+var t_23 = (lineno = 332, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,7]));
 if(t_23) {t_23 = runtime.fromIterator(t_23);
 var t_22 = t_23.length;
 for(var t_21=0; t_21 < t_23.length; t_21++) {
@@ -2144,16 +2144,83 @@ frame.set("loop.revindex0", t_22 - t_21 - 1);
 frame.set("loop.first", t_21 === 0);
 frame.set("loop.last", t_21 === t_22 - 1);
 frame.set("loop.length", t_22);
-output += "\n                    <label id=\"plando_helm_order_div_";
+output += "\n                    <label id=\"plando_boss_order_div_";
 output += runtime.suppressValue(t_24, env.opts.autoescape);
-output += "\"\n                        class=\"flex-container select-order\">\n                        <span class=\"order-label\">Kong ";
+output += "\"\n                        class=\"flex-container select-order\">\n                        <span class=\"order-label\">Level ";
 output += runtime.suppressValue(t_24 + 1, env.opts.autoescape);
+output += ":</span>\n                        <div id=\"plando_boss_order_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "_wrapper\"\n                             data-toggle=\"tooltip\"\n                             title>\n                            <select id=\"plando_boss_order_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "\"\n                                    name=\"plando_boss_order_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "\"\n                                    class=\"form-select order-select\">\n                                <option value=\"\" selected\">\n                                    -- Randomize --\n                                </option>\n                                ";
+frame = frame.push();
+var t_27 = runtime.contextOrFrameLookup(context, frame, "plando_phases");
+if(t_27) {t_27 = runtime.fromIterator(t_27);
+var t_26 = t_27.length;
+for(var t_25=0; t_25 < t_27.length; t_25++) {
+var t_28 = t_27[t_25];
+frame.set("phase", t_28);
+frame.set("loop.index", t_25 + 1);
+frame.set("loop.index0", t_25);
+frame.set("loop.revindex", t_26 - t_25);
+frame.set("loop.revindex0", t_26 - t_25 - 1);
+frame.set("loop.first", t_25 === 0);
+frame.set("loop.last", t_25 === t_26 - 1);
+frame.set("loop.length", t_26);
+output += "\n                                  <option value=\"";
+output += runtime.suppressValue(runtime.memberLookup((t_28),"value"), env.opts.autoescape);
+output += "\"\n                                  ";
+if(runtime.inOperator("Boss",runtime.memberLookup((t_28),"value"))) {
+output += "\n                                    class=\"plando-krool-phase\"\n                                  ";
+;
+}
+else {
+output += "\n                                    class=\"plando-tns-boss\"\n                                  ";
+;
+}
+output += "\n                                  >\n                                    ";
+output += runtime.suppressValue(runtime.memberLookup((t_28),"name"), env.opts.autoescape);
+output += "\n                                  </option>\n                                ";
+;
+}
+}
+frame = frame.pop();
+output += "\n                            </select>\n                            <select id=\"plando_boss_kong_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "\"\n                                    name=\"plando_boss_kong_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "\"\n                                    class=\"form-select order-select\">\n                                <option value=\"\" selected\">\n                                    -- Randomize --\n                                </option>\n                                <option value=\"donkey\">\n                                    Donkey\n                                </option>\n                                <option value=\"diddy\">\n                                    Diddy\n                                </option>\n                                <option value=\"lanky\">\n                                    Lanky\n                                </option>\n                                <option value=\"tiny\">\n                                    Tiny\n                                </option>\n                                <option value=\"chunky\">\n                                    Chunky\n                                </option>\n                            </select>\n                        </div>\n                    </label>\n                ";
+;
+}
+}
+frame = frame.pop();
+output += "\n            </div>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Helm Order</p>\n                ";
+frame = frame.push();
+var t_31 = (lineno = 385, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,5]));
+if(t_31) {t_31 = runtime.fromIterator(t_31);
+var t_30 = t_31.length;
+for(var t_29=0; t_29 < t_31.length; t_29++) {
+var t_32 = t_31[t_29];
+frame.set("i", t_32);
+frame.set("loop.index", t_29 + 1);
+frame.set("loop.index0", t_29);
+frame.set("loop.revindex", t_30 - t_29);
+frame.set("loop.revindex0", t_30 - t_29 - 1);
+frame.set("loop.first", t_29 === 0);
+frame.set("loop.last", t_29 === t_30 - 1);
+frame.set("loop.length", t_30);
+output += "\n                    <label id=\"plando_helm_order_div_";
+output += runtime.suppressValue(t_32, env.opts.autoescape);
+output += "\"\n                        class=\"flex-container select-order\">\n                        <span class=\"order-label\">Kong ";
+output += runtime.suppressValue(t_32 + 1, env.opts.autoescape);
 output += ":</span>\n                        <div id=\"plando_helm_order_";
-output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += runtime.suppressValue(t_32, env.opts.autoescape);
 output += "_wrapper\"\n                             data-toggle=\"tooltip\"\n                             title>\n                            <select id=\"plando_helm_order_";
-output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += runtime.suppressValue(t_32, env.opts.autoescape);
 output += "\"\n                                    name=\"plando_helm_order_";
-output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += runtime.suppressValue(t_32, env.opts.autoescape);
 output += "\"\n                                    class=\"form-select order-select\">\n                                <option value=\"\" selected\">\n                                    -- Randomize --\n                                </option>\n                                <option value=\"donkey\">\n                                    Donkey\n                                </option>\n                                <option value=\"diddy\">\n                                    Diddy\n                                </option>\n                                <option value=\"lanky\">\n                                    Lanky\n                                </option>\n                                <option value=\"tiny\">\n                                    Tiny\n                                </option>\n                                <option value=\"chunky\">\n                                    Chunky\n                                </option>\n                            </select>\n                        </div>\n                    </label>\n                ";
 ;
 }
