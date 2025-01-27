@@ -2187,7 +2187,9 @@ output += "\n                                  </option>\n                      
 }
 }
 frame = frame.pop();
-output += "\n                            </select>\n                            <select id=\"plando_boss_kong_";
+output += "\n                            </select>\n                        </div>\n                        <div id=\"plando_boss_kong_";
+output += runtime.suppressValue(t_24, env.opts.autoescape);
+output += "_wrapper\"\n                             data-toggle=\"tooltip\"\n                             title>\n                            <select id=\"plando_boss_kong_";
 output += runtime.suppressValue(t_24, env.opts.autoescape);
 output += "\"\n                                    name=\"plando_boss_kong_";
 output += runtime.suppressValue(t_24, env.opts.autoescape);
@@ -2198,7 +2200,7 @@ output += "\"\n                                    class=\"form-select order-sel
 frame = frame.pop();
 output += "\n            </div>\n            <div class=\"item-select wide-select\">\n                <p class=\"select-title\">Helm Order</p>\n                ";
 frame = frame.push();
-var t_31 = (lineno = 385, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,5]));
+var t_31 = (lineno = 389, colno = 33, runtime.callWrap(runtime.contextOrFrameLookup(context, frame, "range"), "range", context, [0,5]));
 if(t_31) {t_31 = runtime.fromIterator(t_31);
 var t_30 = t_31.length;
 for(var t_29=0; t_29 < t_31.length; t_29++) {
