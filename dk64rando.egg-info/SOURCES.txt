@@ -185,6 +185,7 @@ randomizer/Patching/Cosmetics/ModelSwaps.py
 randomizer/Patching/Cosmetics/Puzzles.py
 randomizer/Patching/Cosmetics/TextRando.py
 randomizer/Patching/Cosmetics/__init__.py
+randomizer/Patching/Library/ASM.py
 randomizer/Patching/Library/Assets.py
 randomizer/Patching/Library/DataTypes.py
 randomizer/Patching/Library/Generic.py
