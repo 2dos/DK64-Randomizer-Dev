@@ -4477,7 +4477,7 @@ var output = "";
 try {
 var parentTemplate = null;
 var t_1;
-t_1 = ["Settings","Spoiler Hints Data","Generated Time","Selected Minigames","Item Pool","Enemy Placement (Stringified JSON)"];
+t_1 = ["Settings","Spoiler Hints Data","Generated Time","Generation Branch","Selected Minigames","Item Pool","Enemy Placement (Stringified JSON)"];
 frame.set("ignored_attrs", t_1, true);
 if(frame.topLevel) {
 context.setVariable("ignored_attrs", t_1);
