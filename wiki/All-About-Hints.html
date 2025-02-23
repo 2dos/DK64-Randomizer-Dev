@@ -15,7 +15,7 @@
         <meta content="Welcome to the DK64 Randomizer Wiki. A comprehensive wiki on tricks, tips and guides to playing the best monkey game randomizer on the Nintendo 64." property="og:description" />
         <meta content="Donkey Kong 64 Randomizer Wiki" property="og:site_name" />
         <meta content="https://raw.githubusercontent.com/2dos/DK64-Randomizer/master/static/img/logo.webp" property="og:image" />
-        <script type="text/javascript" src="../static/js/showdown.min.js?v=4.10.61"></script>
+        <script type="text/javascript" src="../static/js/showdown.min.js?v=4.10.62"></script>
         <title>All About Hints</title>
         <link href="../static/img/dk.png" rel="icon" />
         <link href="../web_cache/cssfamily=Catamaran:100,200,300,400,500,600,700,800,900"
@@ -25,7 +25,7 @@
         <link href="../static/styles/styles.css" rel="stylesheet" />
         <link href="../static/styles/gui.css" rel="stylesheet" type="text/css" />
         <link href="../static/styles/wiki.css" rel="stylesheet" type="text/css" />
-        <script src="../web_cache/jquery-3.7.1.min.js?v=4.10.61" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="../web_cache/jquery-3.7.1.min.js?v=4.10.62" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -67,7 +67,7 @@
             class="center_image"
             style="cursor: pointer; margin-top: 70px"/>
         <div class="mt-4"></div>
-        <div class="container">
+        <div class="container" id="content-container">
             <div class="row">
                 <div class="col-sm-3 p-0 hide-if-thin">
                     <div class="px-3 mb-3">
@@ -102,7 +102,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <input class="form-control mr-sm-2" id="article-search" type="text" placeholder="Search" autocomplete="off" data-lpignore="true" data-form-type="other">
+                            <input class="form-control mr-sm-2" id="article-search" type="search" placeholder="Search" autocomplete="off" data-lpignore="true" data-form-type="other">
                         </div>
                     </div>
                     </div>
@@ -126,8 +126,8 @@
             </div>
         </div>
         <script id="redirect_handler">window.location.href="./index.html?title=All-About-Hints";</script>
-        <script type="text/javascript" src="../static/js/wiki-code.js?v=4.10.61"></script>
-        <script src="../static/js/autocomplete.js?v=4.10.61"></script>
+        <script type="text/javascript" src="../static/js/wiki-code.js?v=4.10.62"></script>
+        <script src="../web_cache/npm/typeahead-standalone"></script>
         <script type="text/javascript">
             function copyCode(element) {
                 let parent = element.parentElement.parentElement.parentElement;
@@ -195,24 +195,32 @@
             }
 
             async function prepSuggestions() {
-                const article_lst = await getSuggestions();
-                console.log(article_lst)
-                $('#article-search').typeahead({
-                    source: article_lst,
-                    displayText: (item) => {
-                        return item.name;
+                const article_lst = await getSuggestions();                
+                const instance = window.typeahead({
+                    input: document.getElementById("article-search"),
+                    source: {
+                        local: article_lst,
+                        keys: ["name"],
                     },
-                    afterSelect: (item) => {
+                    autoSelect: true,
+                    hint: false,
+                    onSubmit: (e, item) => {
                         window.location.href = item.link;
+                    },
+                    templates: {
+                        suggestion: (item, resultSet) => {
+                            console.log(item, resultSet)
+                            return `<div onClick="goTo('${item.link}')">${item.name}</div>`
+                        }
                     }
-                });
+                })
             }
 
             document.addEventListener('DOMContentLoaded', e => {
                 prepSuggestions();
             }, false);
         </script>
-        <script type="text/javascript" src="../static/js/font-awesome.js?v=4.10.61"></script>
-        <script src="../web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=4.10.61" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../static/js/font-awesome.js?v=4.10.62"></script>
+        <script src="../web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=4.10.62" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
