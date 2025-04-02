@@ -1,6 +1,19 @@
 LICENSE
 README.md
 setup.py
+archipelago/DK64Client.py
+archipelago/Items.py
+archipelago/Logic.py
+archipelago/Options.py
+archipelago/Regions.py
+archipelago/Rules.py
+archipelago/__init__.py
+archipelago/client/__init__.py
+archipelago/client/ap_check_ids.py
+archipelago/client/check_flag_locations.py
+archipelago/client/common.py
+archipelago/client/items.py
+archipelago/client/pj64.py
 controller/__init__.py
 controller/app.py
 controller/cleanup.py
@@ -147,6 +160,7 @@ randomizer/LogicFiles/__init__.py
 randomizer/Patching/ASMPatcher.py
 randomizer/Patching/ApplyLocal.py
 randomizer/Patching/ApplyRandomizer.py
+randomizer/Patching/BPS.py
 randomizer/Patching/BananaPlacer.py
 randomizer/Patching/BananaPortRando.py
 randomizer/Patching/BarrelRando.py

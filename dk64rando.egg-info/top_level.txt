@@ -1,3 +1,4 @@
+archipelago
 controller
 randomizer
 ui
