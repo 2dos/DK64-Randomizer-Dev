@@ -2,6 +2,7 @@ LICENSE
 README.md
 setup.py
 archipelago/DK64Client.py
+archipelago/Hints.py
 archipelago/Items.py
 archipelago/Logic.py
 archipelago/Options.py
