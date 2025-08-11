@@ -52,10 +52,10 @@
                 }
             }
         </style>
-        <script type="text/javascript" src="./static/js/rompatcher/crc.js?v=4.11.85" defer></script>
-        <script type="text/javascript" src="./static/js/rompatcher/formats/bps.js?v=4.11.85" defer></script>
-        <script type="text/javascript" src="./static/js/rompatcher/MarcFile.js?v=4.11.85" defer></script>
-        <script src="./static/js/rompatcher/RomPatcher.js?v=4.11.85"></script>
+        <script type="text/javascript" src="./static/js/rompatcher/crc.js?v=5.0.0" defer></script>
+        <script type="text/javascript" src="./static/js/rompatcher/formats/bps.js?v=5.0.0" defer></script>
+        <script type="text/javascript" src="./static/js/rompatcher/MarcFile.js?v=5.0.0" defer></script>
+        <script src="./static/js/rompatcher/RomPatcher.js?v=5.0.0"></script>
         <script>
             window.onerror = function (error) {
                 let targ = document.getElementById("error_box");
@@ -92,7 +92,7 @@
             </div>
         </div>
     </body>
-    <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=4.11.85" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=5.0.0" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         var target_rom;
         const vanilla_rom_input = document.getElementById("input-file-rom");
@@ -134,7 +134,7 @@
                     data["input"].dispatchEvent(event);
                 }
             });
-        })
+        });
 
         rando_rom_input.addEventListener("change", function() {
 			var fr = new FileReader();
@@ -149,7 +149,7 @@
             path = last(path.split("/"));
             path = last(path.split("\\"));
             document.getElementById("rando_rom_text").value = path;
-        })
+        });
 
         function clearProgress() {
             rando_rom_box.classList.add("hide");
@@ -163,10 +163,10 @@
 
         vanilla_rom_box.addEventListener("click", (e) => {
             vanilla_rom_input.click();
-        })
+        });
         rando_rom_box.addEventListener("click", (e) => {
             rando_rom_input.click();
-        })
+        });
 
         vanilla_rom_input.addEventListener("change", function() {
             clearProgress();
@@ -174,7 +174,7 @@
             path = last(path.split("/"));
             path = last(path.split("\\"));
             document.getElementById("vanilla_rom_text").value = path;
-        })
+        });
         
         document.getElementById("save_bps").addEventListener("click", ()=>{buildBPS()})
 
@@ -228,7 +228,7 @@
         };
 
         function buildBPS() {
-            webWorkerCreate=new Worker("./static/js/rompatcher/worker_create.js");
+            var webWorkerCreate=new Worker("./static/js/rompatcher/worker_create.js");
             webWorkerCreate.postMessage(
                 {
                     sourceFileU8Array:romFile._u8array,
@@ -246,10 +246,10 @@
                 const directory_delimiters = ["/","\\"]
                 extensions.forEach(ext => {
                     original_name = original_name.split(ext)[0];
-                })
+                });
                 directory_delimiters.forEach(delim => {
                     original_name = last(original_name.split(delim));
-                })
+                });
                 downloadBlob(newPatchFile._u8array,`${original_name}.bps`,"application/octet-stream")
             };
         }

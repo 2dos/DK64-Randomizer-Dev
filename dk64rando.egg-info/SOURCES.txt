@@ -190,6 +190,13 @@ randomizer/Patching/ShopRandomizer.py
 randomizer/Patching/UpdateHints.py
 randomizer/Patching/__init__.py
 randomizer/Patching/generate_kong_color_images.py
+randomizer/Patching/ASM/Actors.py
+randomizer/Patching/ASM/Cosmetic.py
+randomizer/Patching/ASM/Items.py
+randomizer/Patching/ASM/Kaizo.py
+randomizer/Patching/ASM/Save.py
+randomizer/Patching/ASM/TextFiles.py
+randomizer/Patching/ASM/__init__.py
 randomizer/Patching/Cosmetics/Colorblind.py
 randomizer/Patching/Cosmetics/CustomTextures.py
 randomizer/Patching/Cosmetics/EnemyColors.py
@@ -205,6 +212,7 @@ randomizer/Patching/Library/Assets.py
 randomizer/Patching/Library/DataTypes.py
 randomizer/Patching/Library/Generic.py
 randomizer/Patching/Library/Image.py
+randomizer/Patching/Library/ItemRando.py
 randomizer/Patching/Library/__init__.py
 tests/test_spoiler.py
 ui/__init__.py

@@ -8,14 +8,14 @@
         <meta name="author" content="" />
         <title>DK64 Randomizer</title>
         <link href="./base-hack/assets/DKTV/logo3.png" rel="icon" />
-        <script src="./web_cache/releases/v5.15.4/js/all.js?v=4.11.85" crossorigin="anonymous"></script>
+        <script src="./web_cache/releases/v5.15.4/js/all.js?v=5.0.0" crossorigin="anonymous"></script>
         <link href="./web_cache/cssfamily=Catamaran:100,200,300,400,500,600,700,800,900"
               rel="stylesheet"/>
         <link href="./web_cache/cssfamily=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
               rel="stylesheet"/>
         <link href="static/styles/styles.css" rel="stylesheet" />
         <link href="./static/styles/gui.css" rel="stylesheet" type="text/css" />
-        <script src="./web_cache/jquery-3.7.1.min.js?v=4.11.85" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="./web_cache/jquery-3.7.1.min.js?v=5.0.0" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <style>
             .privacy-policy-container {
                 max-width: 800px;
@@ -171,7 +171,7 @@
                             $("#total_generated_seeds").html("<strong>Total Generated Seeds:</strong> " + data.total_seeds);
                             $("#last_seed_generated").html("<strong>Last Seed Generated:</strong> " + time_since_generated);
                         }
-                    })
+                    });
                 }
                 setInterval(function () {
                     query_stats();
@@ -223,7 +223,6 @@
                     var all_seeds = seed_store.getAll();
                     all_seeds.onsuccess = function () {
                         try {
-                        var arrayLength = all_seeds.result.length;
                         var sorted_array = all_seeds.result;
                         sorted_array.sort(function (a, b) {
                             return new Date(b.date) - new Date(a.date);
@@ -260,10 +259,10 @@
             </script>
         </div>
     </footer>
-    <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=4.11.85"></script>
+    <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=5.0.0"></script>
     <script>
         function render_page(page) {
-            xmlhttp = new XMLHttpRequest();
+            var xmlhttp = new XMLHttpRequest();
             xmlhttp.open("GET", page + ".html", false);
             xmlhttp.send();
             var data = xmlhttp.responseText;
@@ -281,8 +280,8 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip({
                 trigger: 'hover'
-            })
-        })
+            });
+        });
         async function fetchVersion(url) {
         try {
             // Fetch the contents of the file
