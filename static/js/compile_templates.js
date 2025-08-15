@@ -1890,7 +1890,7 @@ t_32 += "\"\n                    display_name=\"";
 t_32 += runtime.suppressValue(l_selector_name, env.opts.autoescape);
 t_32 += "\"\n                    class=\"form-select center-div\"\n                    aria-label=\"Randomization type\"\n                    data-toggle=\"tooltip\"\n                    title=\"";
 t_32 += runtime.suppressValue(l_tooltip, env.opts.autoescape);
-t_32 += "\">\n                <option id=\"pre_selected\" value=\"pre_selected\">\n                    Pre-Selected\n                </option>\n                <option id=\"easy_random\" value=\"easy_random\">\n                    Easy Random\n                </option>\n                <option id=\"normal_random\" selected value=\"normal_random\">\n                    Normal Random\n                </option>\n                <option id=\"hard_random\" value=\"hard_random\">\n                    Hard Random\n                </option>\n            </select>\n            <input min=\"";
+t_32 += "\">\n                <option id=\"pre_selected\" value=\"pre_selected\">\n                    Pre-Selected\n                </option>\n                <option id=\"easy_random\" value=\"easy_random\">\n                    Easy Random\n                </option>\n                <option id=\"medium_random\" selected value=\"medium_random\">\n                    Normal Random\n                </option>\n                <option id=\"hard_random\" value=\"hard_random\">\n                    Hard Random\n                </option>\n            </select>\n            <input min=\"";
 t_32 += runtime.suppressValue(l_min, env.opts.autoescape);
 t_32 += "\"\n                max=\"";
 t_32 += runtime.suppressValue(l_max, env.opts.autoescape);
