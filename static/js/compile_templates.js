@@ -1890,7 +1890,12 @@ t_32 += "\"\n                    display_name=\"";
 t_32 += runtime.suppressValue(l_selector_name, env.opts.autoescape);
 t_32 += "\"\n                    class=\"form-select center-div\"\n                    aria-label=\"Randomization type\"\n                    data-toggle=\"tooltip\"\n                    title=\"";
 t_32 += runtime.suppressValue(l_tooltip, env.opts.autoescape);
-t_32 += "\">\n                <option id=\"pre_selected\" value=\"pre_selected\">\n                    Pre-Selected\n                </option>\n                <option id=\"easy_random\" value=\"easy_random\">\n                    Easy Random\n                </option>\n                <option id=\"medium_random\" selected value=\"medium_random\">\n                    Normal Random\n                </option>\n                <option id=\"hard_random\" value=\"hard_random\">\n                    Hard Random\n                </option>\n            </select>\n            <input min=\"";
+t_32 += "\">\n                <option id=\"pre_selected\" value=\"pre_selected\">\n                    Pre-Selected\n                </option>\n                <option id=\"easy_random\" value=\"easy_random\">\n                    Easy Random\n                </option>\n                <option id=\"medium_random\" selected value=\"medium_random\">\n                    Normal Random\n                </option>\n                <option id=\"hard_random\" value=\"hard_random\">\n                    Hard Random\n                </option>\n                ";
+if(l_behavior_name == "cb_medal_behavior_new") {
+t_32 += "\n                    <option id=\"progressive\" value=\"progressive\">\n                        Progressive\n                    </option>\n                ";
+;
+}
+t_32 += "\n            </select>\n            <input min=\"";
 t_32 += runtime.suppressValue(l_min, env.opts.autoescape);
 t_32 += "\"\n                max=\"";
 t_32 += runtime.suppressValue(l_max, env.opts.autoescape);
@@ -5108,7 +5113,7 @@ output += runtime.suppressValue((lineno = 189, colno = 36, runtime.callWrap(t_6,
 output += "\n                <!-- Fairies for Queen -->\n                ";
 output += runtime.suppressValue((lineno = 191, colno = 36, runtime.callWrap(t_6, "item_req_selector", context, ["fairy_queen_behavior","rareware_gb_fairies","Fairies for Fairy Queen",1,20,"Determines how Rareware GB check requirements are determined."])), env.opts.autoescape);
 output += "\n                <!-- Medal CB Requirement -->\n                ";
-output += runtime.suppressValue((lineno = 193, colno = 36, runtime.callWrap(t_6, "item_req_selector", context, ["cb_medal_behavior","medal_cb_req","Colored Bananas for a Medal",1,100,"Determines how Medal requirements are determined."])), env.opts.autoescape);
+output += runtime.suppressValue((lineno = 193, colno = 36, runtime.callWrap(t_6, "item_req_selector", context, ["cb_medal_behavior_new","medal_cb_req","Colored Bananas for a Medal",1,100,"Determines how Medal requirements are determined."])), env.opts.autoescape);
 output += "\n            </div>\n        </div>\n        <div class=\"col border panel\">\n            <h2 class=\"title\">OVERWORLD REQUIREMENTS</h2>\n            <div class=\"flex-container\">\n                <div class=\"form-check form-switch item-switch\">\n                    <label data-toggle=\"tooltip\"\n                            title=\"All lobbies will be open as if the key to K. Lumsy was already turned in.&#10;This does not affect K. Rool's ship.\">\n                        <input class=\"form-check-input\"\n                                type=\"checkbox\"\n                                name=\"open_lobbies\"\n                                display_name=\"Open Lobbies\"\n                                value=\"True\"/>\n                        Open Lobbies\n                    </label>\n                </div>\n                ";
 var tasks = [];
 tasks.push(
