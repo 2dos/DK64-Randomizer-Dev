@@ -13,8 +13,8 @@ archipelago/client/__init__.py
 archipelago/client/ap_check_ids.py
 archipelago/client/check_flag_locations.py
 archipelago/client/common.py
+archipelago/client/emu_loader.py
 archipelago/client/items.py
-archipelago/client/pj64.py
 controller/__init__.py
 controller/app.py
 controller/cleanup.py
