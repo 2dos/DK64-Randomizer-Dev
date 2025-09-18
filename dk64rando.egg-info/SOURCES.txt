@@ -10,6 +10,7 @@ archipelago/Options.py
 archipelago/Regions.py
 archipelago/Rules.py
 archipelago/__init__.py
+archipelago/fillsettings.py
 archipelago/client/__init__.py
 archipelago/client/ap_check_ids.py
 archipelago/client/check_flag_locations.py
