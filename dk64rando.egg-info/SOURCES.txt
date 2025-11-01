@@ -61,6 +61,7 @@ randomizer/CollectibleLogicFiles/FungiForest.py
 randomizer/CollectibleLogicFiles/GloomyGalleon.py
 randomizer/CollectibleLogicFiles/JungleJapes.py
 randomizer/CollectibleLogicFiles/TestBananaTotals.py
+randomizer/CollectibleLogicFiles/TestCoinTotals.py
 randomizer/CollectibleLogicFiles/__init__.py
 randomizer/Enums/Collectibles.jsonc
 randomizer/Enums/Collectibles.py
