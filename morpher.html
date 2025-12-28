@@ -729,6 +729,23 @@
                         }
                     }
                 }
+                if (sel_version_num < numericVersion("5.8.0")) {
+                    console.log("Pre-defining the boss pool.")
+                    setting_data.bosses_selected = [
+                        "JapesBoss",
+                        "AztecBoss",
+                        "FactoryBoss",
+                        "GalleonBoss",
+                        "FungiBoss",
+                        "CavesBoss",
+                        "CastleBoss",
+                        "KroolDonkeyPhase",
+                        "KroolDiddyPhase",
+                        "KroolLankyPhase",
+                        "KroolTinyPhase",
+                        "KroolChunkyPhase",
+                    ];
+                }
                 // Update to include all unhandled options to unsorted
                 const all_valid_items = Object.keys(output_json.ItemRandoListSelected);
                 let mentioned_items = [];
@@ -755,6 +772,6 @@
             })
 
         </script>
-        <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=5.7.59" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="./web_cache/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js?v=5.8.0" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
