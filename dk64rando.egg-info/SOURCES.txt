@@ -8,6 +8,7 @@ archipelago/Hints.py
 archipelago/Items.py
 archipelago/Logic.py
 archipelago/Options.py
+archipelago/Prices.py
 archipelago/Regions.py
 archipelago/Rules.py
 archipelago/__init__.py
