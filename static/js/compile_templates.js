@@ -3019,12 +3019,12 @@ output += "\n            ";
 });
 }
 else {
-if(t_19 == "Switches") {
+if(t_19 == "Locations") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_switches.html", false, "plandomizer/plandomizer.html", false, function(t_26,t_25) {
+env.getTemplate("plandomizer/plandomizer_locations.html", false, "plandomizer/plandomizer.html", false, function(t_26,t_25) {
 if(t_26) { cb(t_26); return; }
 callback(null,t_25);});
 });
@@ -3044,12 +3044,12 @@ output += "\n            ";
 });
 }
 else {
-if(t_19 == "Locations") {
+if(t_19 == "Minigames") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_locations.html", false, "plandomizer/plandomizer.html", false, function(t_30,t_29) {
+env.getTemplate("plandomizer/plandomizer_minigames.html", false, "plandomizer/plandomizer.html", false, function(t_30,t_29) {
 if(t_30) { cb(t_30); return; }
 callback(null,t_29);});
 });
@@ -3069,12 +3069,12 @@ output += "\n            ";
 });
 }
 else {
-if(t_19 == "Minigames") {
+if(t_19 == "Hints") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_minigames.html", false, "plandomizer/plandomizer.html", false, function(t_34,t_33) {
+env.getTemplate("plandomizer/plandomizer_hints.html", false, "plandomizer/plandomizer.html", false, function(t_34,t_33) {
 if(t_34) { cb(t_34); return; }
 callback(null,t_33);});
 });
@@ -3094,12 +3094,11 @@ output += "\n            ";
 });
 }
 else {
-if(t_19 == "Hints") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_hints.html", false, "plandomizer/plandomizer.html", false, function(t_38,t_37) {
+env.getTemplate("plandomizer/plandomizer_levels.html", false, "plandomizer/plandomizer.html", false, function(t_38,t_37) {
 if(t_38) { cb(t_38); return; }
 callback(null,t_37);});
 });
@@ -3118,32 +3117,6 @@ env.waterfall(tasks, function(){
 output += "\n            ";
 });
 }
-else {
-output += "\n                ";
-var tasks = [];
-tasks.push(
-function(callback) {
-env.getTemplate("plandomizer/plandomizer_levels.html", false, "plandomizer/plandomizer.html", false, function(t_42,t_41) {
-if(t_42) { cb(t_42); return; }
-callback(null,t_41);});
-});
-tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_44,t_43) {
-if(t_44) { cb(t_44); return; }
-callback(null,t_43);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "\n            ";
-});
-}
-;
-}
 ;
 }
 ;
@@ -3156,11 +3129,11 @@ output += "\n        ";
 } else {
 t_16 = -1;
 var t_17 = runtime.keys(t_18).length;
-for(var t_45 in t_18) {
+for(var t_41 in t_18) {
 t_16++;
-var t_46 = t_18[t_45];
-frame.set("panelName", t_45);
-frame.set("panel", t_46);
+var t_42 = t_18[t_41];
+frame.set("panelName", t_41);
+frame.set("panel", t_42);
 frame.set("loop.index", t_16 + 1);
 frame.set("loop.index0", t_16);
 frame.set("loop.revindex", t_17 - t_16);
@@ -3169,12 +3142,37 @@ frame.set("loop.first", t_16 === 0);
 frame.set("loop.last", t_16 === t_17 - 1);
 frame.set("loop.length", t_17);
 output += "\n            ";
-if(t_45 == "Shops") {
+if(t_41 == "Shops") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_shops.html", false, "plandomizer/plandomizer.html", false, function(t_48,t_47) {
+env.getTemplate("plandomizer/plandomizer_shops.html", false, "plandomizer/plandomizer.html", false, function(t_44,t_43) {
+if(t_44) { cb(t_44); return; }
+callback(null,t_43);});
+});
+tasks.push(
+function(template, callback){
+template.render(context.getVariables(), frame, function(t_46,t_45) {
+if(t_46) { cb(t_46); return; }
+callback(null,t_45);});
+});
+tasks.push(
+function(result, callback){
+output += result;
+callback(null);
+});
+env.waterfall(tasks, function(){
+output += "\n            ";
+});
+}
+else {
+if(t_41 == "Locations") {
+output += "\n                ";
+var tasks = [];
+tasks.push(
+function(callback) {
+env.getTemplate("plandomizer/plandomizer_locations.html", false, "plandomizer/plandomizer.html", false, function(t_48,t_47) {
 if(t_48) { cb(t_48); return; }
 callback(null,t_47);});
 });
@@ -3194,12 +3192,12 @@ output += "\n            ";
 });
 }
 else {
-if(t_45 == "Switches") {
+if(t_41 == "Minigames") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_switches.html", false, "plandomizer/plandomizer.html", false, function(t_52,t_51) {
+env.getTemplate("plandomizer/plandomizer_minigames.html", false, "plandomizer/plandomizer.html", false, function(t_52,t_51) {
 if(t_52) { cb(t_52); return; }
 callback(null,t_51);});
 });
@@ -3219,12 +3217,12 @@ output += "\n            ";
 });
 }
 else {
-if(t_45 == "Locations") {
+if(t_41 == "Hints") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_locations.html", false, "plandomizer/plandomizer.html", false, function(t_56,t_55) {
+env.getTemplate("plandomizer/plandomizer_hints.html", false, "plandomizer/plandomizer.html", false, function(t_56,t_55) {
 if(t_56) { cb(t_56); return; }
 callback(null,t_55);});
 });
@@ -3244,12 +3242,11 @@ output += "\n            ";
 });
 }
 else {
-if(t_45 == "Minigames") {
 output += "\n                ";
 var tasks = [];
 tasks.push(
 function(callback) {
-env.getTemplate("plandomizer/plandomizer_minigames.html", false, "plandomizer/plandomizer.html", false, function(t_60,t_59) {
+env.getTemplate("plandomizer/plandomizer_levels.html", false, "plandomizer/plandomizer.html", false, function(t_60,t_59) {
 if(t_60) { cb(t_60); return; }
 callback(null,t_59);});
 });
@@ -3267,57 +3264,6 @@ callback(null);
 env.waterfall(tasks, function(){
 output += "\n            ";
 });
-}
-else {
-if(t_45 == "Hints") {
-output += "\n                ";
-var tasks = [];
-tasks.push(
-function(callback) {
-env.getTemplate("plandomizer/plandomizer_hints.html", false, "plandomizer/plandomizer.html", false, function(t_64,t_63) {
-if(t_64) { cb(t_64); return; }
-callback(null,t_63);});
-});
-tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_66,t_65) {
-if(t_66) { cb(t_66); return; }
-callback(null,t_65);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "\n            ";
-});
-}
-else {
-output += "\n                ";
-var tasks = [];
-tasks.push(
-function(callback) {
-env.getTemplate("plandomizer/plandomizer_levels.html", false, "plandomizer/plandomizer.html", false, function(t_68,t_67) {
-if(t_68) { cb(t_68); return; }
-callback(null,t_67);});
-});
-tasks.push(
-function(template, callback){
-template.render(context.getVariables(), frame, function(t_70,t_69) {
-if(t_70) { cb(t_70); return; }
-callback(null,t_69);});
-});
-tasks.push(
-function(result, callback){
-output += result;
-callback(null);
-});
-env.waterfall(tasks, function(){
-output += "\n            ";
-});
-}
-;
 }
 ;
 }
@@ -4964,133 +4910,6 @@ output += "\n        </div>\n    ";
 }
 frame = frame.pop();
 output += "\n</div>\n";
-if(parentTemplate) {
-parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
-} else {
-cb(null, output);
-}
-;
-} catch (e) {
-  cb(runtime.handleError(e, lineno, colno));
-}
-}
-return {
-root: root
-};
-
-})();
-})();
-(function() {(window.nunjucksPrecompiled = window.nunjucksPrecompiled || {})["plandomizer/plandomizer_switches.html"] = (function() {
-function root(env, context, frame, runtime, cb) {
-var lineno = 0;
-var colno = 0;
-var output = "";
-try {
-var parentTemplate = null;
-output += "\n<div class=\"tab-pane plando-pane fade\"\n     id=\"nav-plando-";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "panelName"), env.opts.autoescape);
-output += "\"\n     role=\"tabpanel\"\n     aria-labelledby=\"nav-plando-";
-output += runtime.suppressValue(runtime.contextOrFrameLookup(context, frame, "panelName"), env.opts.autoescape);
-output += "-tab\">\n    <h2 class=\"title\">";
-output += runtime.suppressValue(runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "panel")),"name"), env.opts.autoescape);
-output += "</h2>\n        <div class=\"flex-container flex-center\">\n            ";
-frame = frame.push();
-var t_3 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "panel")),"locations");
-if(t_3) {t_3 = runtime.fromIterator(t_3);
-var t_2 = t_3.length;
-for(var t_1=0; t_1 < t_3.length; t_1++) {
-var t_4 = t_3[t_1];
-frame.set("location", t_4);
-frame.set("loop.index", t_1 + 1);
-frame.set("loop.index0", t_1);
-frame.set("loop.revindex", t_2 - t_1);
-frame.set("loop.revindex0", t_2 - t_1 - 1);
-frame.set("loop.first", t_1 === 0);
-frame.set("loop.last", t_1 === t_2 - 1);
-frame.set("loop.length", t_2);
-output += "\n                <div class=\"location-picker\">\n                    <label for=\"plando_";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"switch_loc"), env.opts.autoescape);
-output += "_switch\" class=\"location-label\">\n                        ";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"name"), env.opts.autoescape);
-output += "\n                    </label>\n                    <div id=\"plando_";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"switch_loc"), env.opts.autoescape);
-output += "_switch_wrapper\"\n                         data-toggle=\"tooltip\"\n                         title>\n                        <select id=\"plando_";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"switch_loc"), env.opts.autoescape);
-output += "_switch\"\n                                name=\"plando_";
-output += runtime.suppressValue(runtime.memberLookup((t_4),"switch_loc"), env.opts.autoescape);
-output += "_switch\"\n                                class=\"form-select\">\n                            <option value=\"\">-- Randomize --</option>\n                            ";
-if(runtime.inOperator(runtime.memberLookup((t_4),"switch_loc"),runtime.contextOrFrameLookup(context, frame, "plando_switches"))) {
-output += "\n                                ";
-frame = frame.push();
-var t_7 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "plando_switches")),runtime.memberLookup((t_4),"switch_loc"));
-if(t_7) {t_7 = runtime.fromIterator(t_7);
-var t_6 = t_7.length;
-for(var t_5=0; t_5 < t_7.length; t_5++) {
-var t_8 = t_7[t_5];
-frame.set("switch", t_8);
-frame.set("loop.index", t_5 + 1);
-frame.set("loop.index0", t_5);
-frame.set("loop.revindex", t_6 - t_5);
-frame.set("loop.revindex0", t_6 - t_5 - 1);
-frame.set("loop.first", t_5 === 0);
-frame.set("loop.last", t_5 === t_6 - 1);
-frame.set("loop.length", t_6);
-output += "\n                                    <option value=\"";
-output += runtime.suppressValue(runtime.memberLookup((t_8),"value"), env.opts.autoescape);
-output += "\"\n                                        ";
-if(runtime.memberLookup((t_8),"value") == runtime.memberLookup((t_4),"vanilla_value")) {
-output += "selected";
-;
-}
-output += ">\n                                        ";
-output += runtime.suppressValue(runtime.memberLookup((t_8),"name"), env.opts.autoescape);
-output += "\n                                    </option>\n                                ";
-;
-}
-}
-frame = frame.pop();
-output += "\n                            ";
-;
-}
-else {
-output += "\n                                ";
-frame = frame.push();
-var t_11 = runtime.memberLookup((runtime.contextOrFrameLookup(context, frame, "plando_switches")),runtime.memberLookup((t_4),"switch_type"));
-if(t_11) {t_11 = runtime.fromIterator(t_11);
-var t_10 = t_11.length;
-for(var t_9=0; t_9 < t_11.length; t_9++) {
-var t_12 = t_11[t_9];
-frame.set("switch", t_12);
-frame.set("loop.index", t_9 + 1);
-frame.set("loop.index0", t_9);
-frame.set("loop.revindex", t_10 - t_9);
-frame.set("loop.revindex0", t_10 - t_9 - 1);
-frame.set("loop.first", t_9 === 0);
-frame.set("loop.last", t_9 === t_10 - 1);
-frame.set("loop.length", t_10);
-output += "\n                                    <option value=\"";
-output += runtime.suppressValue(runtime.memberLookup((t_12),"value"), env.opts.autoescape);
-output += "\"\n                                        ";
-if(runtime.memberLookup((t_12),"value") == runtime.memberLookup((t_4),"vanilla_value")) {
-output += "selected";
-;
-}
-output += ">\n                                        ";
-output += runtime.suppressValue(runtime.memberLookup((t_12),"name"), env.opts.autoescape);
-output += "\n                                    </option>\n                                ";
-;
-}
-}
-frame = frame.pop();
-output += "\n                            ";
-;
-}
-output += "\n                        </select>\n                    </div>\n                </div>\n            ";
-;
-}
-}
-frame = frame.pop();
-output += "\n        </div>\n</div>\n";
 if(parentTemplate) {
 parentTemplate.rootRenderFunc(env, context, frame, runtime, cb);
 } else {
