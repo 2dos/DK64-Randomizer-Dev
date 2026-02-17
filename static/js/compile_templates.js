@@ -4092,14 +4092,14 @@ frame.set("loop.first", t_18 === 0);
 frame.set("loop.last", t_18 === t_19 - 1);
 frame.set("loop.length", t_19);
 output += "\n                                        <option value=\"";
-output += runtime.suppressValue(t_21, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_21),"value"), env.opts.autoescape);
 output += "\"\n                                            ";
-if(t_21 == runtime.memberLookup((t_9),"vanilla_value")) {
+if(runtime.memberLookup((t_21),"value") == runtime.memberLookup((t_9),"vanilla_value")) {
 output += "selected";
 ;
 }
 output += ">\n                                            ";
-output += runtime.suppressValue(t_21, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_21),"name"), env.opts.autoescape);
 output += "\n                                        </option>\n                                    ";
 ;
 }
@@ -4126,14 +4126,14 @@ frame.set("loop.first", t_22 === 0);
 frame.set("loop.last", t_22 === t_23 - 1);
 frame.set("loop.length", t_23);
 output += "\n                                        <option value=\"";
-output += runtime.suppressValue(t_25, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_25),"value"), env.opts.autoescape);
 output += "\"\n                                            ";
-if(t_25 == runtime.memberLookup((t_9),"vanilla_value")) {
+if(runtime.memberLookup((t_25),"value") == runtime.memberLookup((t_9),"vanilla_value")) {
 output += "selected";
 ;
 }
 output += ">\n                                            ";
-output += runtime.suppressValue(t_25, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_25),"name"), env.opts.autoescape);
 output += "\n                                        </option>\n                                    ";
 ;
 }
@@ -4373,14 +4373,14 @@ frame.set("loop.first", t_48 === 0);
 frame.set("loop.last", t_48 === t_49 - 1);
 frame.set("loop.length", t_49);
 output += "\n                                        <option value=\"";
-output += runtime.suppressValue(t_51, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_51),"value"), env.opts.autoescape);
 output += "\"\n                                            ";
-if(t_51 == runtime.memberLookup((t_39),"vanilla_value")) {
+if(runtime.memberLookup((t_51),"value") == runtime.memberLookup((t_39),"vanilla_value")) {
 output += "selected";
 ;
 }
 output += ">\n                                            ";
-output += runtime.suppressValue(t_51, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_51),"name"), env.opts.autoescape);
 output += "\n                                        </option>\n                                    ";
 ;
 }
@@ -4407,14 +4407,14 @@ frame.set("loop.first", t_52 === 0);
 frame.set("loop.last", t_52 === t_53 - 1);
 frame.set("loop.length", t_53);
 output += "\n                                        <option value=\"";
-output += runtime.suppressValue(t_55, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_55),"value"), env.opts.autoescape);
 output += "\"\n                                            ";
-if(t_55 == runtime.memberLookup((t_39),"vanilla_value")) {
+if(runtime.memberLookup((t_55),"value") == runtime.memberLookup((t_39),"vanilla_value")) {
 output += "selected";
 ;
 }
 output += ">\n                                            ";
-output += runtime.suppressValue(t_55, env.opts.autoescape);
+output += runtime.suppressValue(runtime.memberLookup((t_55),"name"), env.opts.autoescape);
 output += "\n                                        </option>\n                                    ";
 ;
 }
