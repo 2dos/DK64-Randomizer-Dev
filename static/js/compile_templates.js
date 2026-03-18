@@ -2183,7 +2183,7 @@ if(l_first) {
 t_36 += "active";
 ;
 }
-t_36 += " py-2\"\n            id=\"nav-";
+t_36 += " p-2 pe-4\"\n            id=\"nav-";
 t_36 += runtime.suppressValue(l_internal_name, env.opts.autoescape);
 t_36 += "-tab\"\n            data-bs-toggle=\"tab\"\n            data-bs-target=\"#nav-";
 t_36 += runtime.suppressValue(l_internal_name, env.opts.autoescape);
@@ -2198,9 +2198,9 @@ t_36 += "hidden";
 }
 t_36 += "\n        >\n            <i class=\"fa ";
 t_36 += runtime.suppressValue(l_tab_icon, env.opts.autoescape);
-t_36 += "\"></i>\n            <span class=\"nav-text\">\n                <div class=\"position-absolute top-50 start-0 translate-middle-y\">";
+t_36 += " fa-xl me-2\"></i> <span>";
 t_36 += runtime.suppressValue(l_tab_name, env.opts.autoescape);
-t_36 += "</div>\n            </span>\n        </a>\n    </li>\n";
+t_36 += "</span>\n        </a>\n    </li>\n";
 ;
 frame = callerFrame;
 return new runtime.SafeString(t_36);
