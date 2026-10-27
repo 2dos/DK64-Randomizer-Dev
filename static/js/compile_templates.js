@@ -492,7 +492,17 @@ output += "\n                                        <!-- <option value=\"robokr
 }
 ;
 }
-output += "\n                                    <option value=\"krool_fight\">\n                                        K. Rool (Fight Gear)\n                                    </option>\n                                    ";
+output += "\n                                    ";
+if(t_5 != "Chunky") {
+output += " <!-- Can't tag levers in Chunky Minecart -->\n                                        ";
+if(t_5 != "Lanky") {
+output += " <!-- Can't punch switches in Lanky Phase -->\n                                            <option value=\"krool_fight\">\n                                                K. Rool (Fight Gear)\n                                            </option>\n                                        ";
+;
+}
+output += "\n                                    ";
+;
+}
+output += "\n                                    ";
 if(t_5 != "Chunky") {
 output += " <!-- Can't punch K Rool in Chunky Phase -->\n                                        ";
 if(t_5 != "Lanky") {
